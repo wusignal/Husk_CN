@@ -1,0 +1,56 @@
+{
+  "name": "Husk 中文汉化版",
+  "identifier": "com.wusignal.husk.cn.source",
+  "subtitle": "在你的 iPhone 上运行 Android 应用和游戏。",
+  "description": "Husk 中文汉化版官方源。添加到 SideStore、AltStore 或其他侧载工具以安装 Husk 中文汉化版并获取更新。原项目来自 Leviidev/Husk。",
+  "iconURL": "https://raw.githubusercontent.com/wusignal/Husk_CN/main/src/app/Husk/Assets.xcassets/AppIcon.appiconset/Icon-Default.png",
+  "website": "https://github.com/wusignal/Husk_CN",
+  "tintColor": "#5865F2",
+  "featuredApps": [
+    "com.husk.app"
+  ],
+  "apps": [
+    {
+      "name": "Husk 中文汉化版",
+      "bundleIdentifier": "com.husk.app",
+      "developerName": "Leviidev（原作者）/ wusignal（汉化）",
+      "subtitle": "在你的 iPhone 上运行 Android 应用和游戏。",
+      "localizedDescription": "Husk 在 iPhone 上运行 Android 应用和游戏。其翻译层原生运行使用 Unity、Unreal、Godot、cocos2d-x、SDL 等引擎制作的游戏，完整 Android 系统则为其他应用提供支持。Husk 需要 JIT：可通过 StikDebug、内置 StikJIT、TrollStore 或越狱开启。本版本为简体中文汉化版。",
+      "iconURL": "https://raw.githubusercontent.com/wusignal/Husk_CN/main/src/app/Husk/Assets.xcassets/AppIcon.appiconset/Icon-Default.png",
+      "tintColor": "#5865F2",
+      "category": "games",
+      "screenshots": [
+        "https://raw.githubusercontent.com/wusignal/Husk_CN/main/Screenshots/beach-buggy-racing-2.jpeg",
+        "https://raw.githubusercontent.com/wusignal/Husk_CN/main/Screenshots/game-settings.png",
+        "https://raw.githubusercontent.com/wusignal/Husk_CN/main/Screenshots/geometry-dash.jpeg",
+        "https://raw.githubusercontent.com/wusignal/Husk_CN/main/Screenshots/gta-san-andreas.jpeg",
+        "https://raw.githubusercontent.com/wusignal/Husk_CN/main/Screenshots/library.png",
+        "https://raw.githubusercontent.com/wusignal/Husk_CN/main/Screenshots/minecraft-dungeons.jpeg",
+        "https://raw.githubusercontent.com/wusignal/Husk_CN/main/Screenshots/settings.png"
+      ],
+      "versions": [
+        {
+          "version": "2.0.0",
+          "buildVersion": "109",
+          "date": "2026-10-16T00:00:00Z",
+          "localizedDescription": "## Husk 中文汉化版 2.0.0\n基于上游 Husk 2.0.0 完整汉化。\n\n## 汉化内容\n- App 全部界面翻译为简体中文\n- 设置、FAQ、游戏页面、商店、文件管理等\n- 崩溃报告、兼容性上报、诊断提示\n- 文档和注释\n\n## 上游 2.0 新特性\n- 圣诞装饰\n- App 内帮助\n- 窗口管理器\n- 全新 UI\n- 移除下载标签页\n- 新增 150+ 游戏和应用支持\n\n原项目：https://github.com/Leviidev/Husk",
+          "downloadURL": "https://github.com/wusignal/Husk_CN/releases/download/2.0.0-cn/Husk.ipa",
+          "size": 110921859,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "get-task-allow",
+          "dynamic-codesigning",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.developer.kernel.extended-virtual-addressing"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Husk 使用本地网络与这台 iPhone 配对以开启 JIT，无需电脑。"
+        }
+      }
+    }
+  ],
+  "news": []
+}

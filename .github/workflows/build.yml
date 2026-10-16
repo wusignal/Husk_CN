@@ -1,0 +1,44 @@
+name: Build iOS IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-14
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Resources
+
+      - name: Install system dependencies
+        run: |
+          brew install meson ninja pkg-config xcodegen qemu
+
+      - name: Install Rust (aarch64-apple-ios)
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+          source "$HOME/.cargo/env"
+          rustup target add aarch64-apple-ios
+
+      - name: Build IPA
+        run: |
+          source "$HOME/.cargo/env"
+          chmod +x scripts/*.sh
+          ./scripts/ci_build.sh
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Husk-IPA
+          path: |
+            build/Husk.ipa
+            build/Husk.tipa
+          if-no-files-found: error
+          retention-days: 30
