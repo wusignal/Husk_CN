@@ -301,8 +301,10 @@ private final class ResourceTable {
     func string(for id: UInt32) -> String? {
         let found = entries(for: id).filter { $0.dataType == 0x03 }
         guard !found.isEmpty else { return nil }
-        let best = found.first { $0.locale == 0 } ?? found[0]
-        return values.string(Int(best.data!))
+        if let exact = found.first(where: { $0.locale == 0 }) {
+            return values.string(Int(exact.data))
+        }
+        return values.string(Int(found[0].data))
     }
 
     /// The best bitmap a resource id resolves to.
