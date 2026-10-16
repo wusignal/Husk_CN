@@ -56,22 +56,16 @@ echo "==> libepoxy"
 echo "    $(ls -lh "$PREFIX/lib/libepoxy.a" | awk '{print $5}')"
 
 echo "==> virglrenderer (render server in thread mode)"
-# Two things this needs that the normal cross file does not give it.
-#
-# cross-ios-darwin.meson sets host system = darwin rather than ios. virglrenderer
-# gates its Metal backend on host_machine.system() == 'darwin', so with 'ios' it
-# never calls add_languages('objc') and dies with "No host machine compiler for
-# vrend_metal.m". UTM's meson_darwin_build forces the same thing.
-#
-# render-server-mode=thread, because iOS cannot spawn processes -- the same
-# constraint that makes QEMU an in-process library here. UTM uses process mode
-# on macOS and thread mode everywhere else for exactly this reason.
+# Patch before subshell so debug output goes to console, not virgl.log
+VR="$GPU/virgl/src/vrend/vrend_renderer.c"
+echo "=== Patching $VR ==="
+ls -la "$VR"
+perl -i -pe 's/llvmpipe_string\s*=\s*strstr.*/llvmpipe_string = NULL;/' "$VR"
+echo "perl exit code: $?"
+grep -n "llvmpipe_string" "$VR"
+echo "=== patch done ==="
 ( cd "$GPU/virgl"
   rm -rf _build
-  # Workaround: llvmpipe_string not available when cross-compiling to iOS
-  perl -i -pe 's/llvmpipe_string\s*=\s*strstr.*/llvmpipe_string = NULL;/' src/vrend/vrend_renderer.c
-  grep -n "llvmpipe_string" src/vrend/vrend_renderer.c | head -5
-  echo "=== patch done ==="
   $MESON setup _build --cross-file "$HUSK_ROOT/build/ios-arm64/cross-ios-darwin.meson" \
       --prefix "$PREFIX" --default-library=static \
       -Dtests=false -Dcheck-gl-errors=false -Dvenus=false -Dvulkan-dload=false \
