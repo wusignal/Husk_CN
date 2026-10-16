@@ -444,7 +444,7 @@ private struct WelcomeCard: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("添加你的第一个游戏")
                     .font(.system(.title2, design: .rounded).weight(.bold))
-                Text("选一个 APK 或整包（.xapk、.apkm、.apks），或从"文件"、Safari 分享到 Husk。游戏直接在你的 iPhone 上运行，"
+                Text("选一个 APK 或整包（.xapk、.apkm、.apks），或从「文件」、Safari 分享到 Husk。游戏直接在你的 iPhone 上运行，"
                    + "其他应用在 Android 内部运行。")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
@@ -786,7 +786,7 @@ struct NoResults: View {
         VStack(spacing: 8) {
             Image(systemName: "magnifyingglass").font(.system(size: 28, weight: .light)).foregroundStyle(.secondary)
             Text("无结果").font(.headline)
-            Text("这里没有叫"\(query)"的东西。").font(.subheadline).foregroundStyle(.secondary)
+            Text("这里没有叫「\(query)」的东西。").font(.subheadline).foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 48)

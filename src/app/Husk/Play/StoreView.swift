@@ -180,7 +180,7 @@ struct StoreView: View {
                         }
                         .padding(.vertical, 12)
                     } else if manager.searchResults.isEmpty {
-                        Text("未找到与"\(debouncedSearchText)"相关的应用。")
+                        Text("未找到与「\(debouncedSearchText)」相关的应用。")
                             .font(.subheadline)
                             .foregroundStyle(Theme.textDim)
                             .padding(.vertical, 8)
