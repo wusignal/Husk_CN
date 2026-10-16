@@ -69,8 +69,9 @@ echo "==> virglrenderer (render server in thread mode)"
 ( cd "$GPU/virgl"
   rm -rf _build
   # Workaround: llvmpipe_string not available when cross-compiling to iOS
-  sed -i '' 's/llvmpipe_string = strstr.*/llvmpipe_string = NULL; \/* no llvmpipe on iOS *\//' src/vrend/vrend_renderer.c
+  perl -i -pe 's/llvmpipe_string\s*=\s*strstr.*/llvmpipe_string = NULL;/' src/vrend/vrend_renderer.c
   grep -n "llvmpipe_string" src/vrend/vrend_renderer.c | head -5
+  echo "=== patch done ==="
   $MESON setup _build --cross-file "$HUSK_ROOT/build/ios-arm64/cross-ios-darwin.meson" \
       --prefix "$PREFIX" --default-library=static \
       -Dtests=false -Dcheck-gl-errors=false -Dvenus=false -Dvulkan-dload=false \
