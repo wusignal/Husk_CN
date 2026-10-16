@@ -302,7 +302,7 @@ private final class ResourceTable {
         let found = entries(for: id).filter { $0.dataType == 0x03 }
         guard !found.isEmpty else { return nil }
         let best = found.first { $0.locale == 0 } ?? found[0]
-        return values.string(Int(best.data))
+        return values.string(Int(best.data!))
     }
 
     /// The best bitmap a resource id resolves to.

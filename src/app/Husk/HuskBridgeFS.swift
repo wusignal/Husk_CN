@@ -1162,13 +1162,15 @@ final class AndroidHost: ObservableObject {
         } }
         guard !safe.isEmpty else { return }
 
-        let script = "for p in " + safe.joined(separator: " ") + "; do "
-                   + "echo \"#P $p\"; "
-                   + "dumpsys package \"$p\" 2>/dev/null | grep -E "
-                   + "\"versionName=|primaryCpuAbi=|categoryHint=|appCategory=\" | head -8; "
-                   + "echo \"#K\"; "
-                   + "pm path \"$p\" 2>/dev/null | sed 's/^package://' | "
-                   + "while read a; do stat -c %s \"$a\" 2>/dev/null; done; done"
+        var scriptParts: [String] = []
+        scriptParts.append("for p in \(safe.joined(separator: " ")); do ")
+        scriptParts.append("echo \"#P $p\"; ")
+        scriptParts.append("dumpsys package \"$p\" 2>/dev/null | grep -E ")
+        scriptParts.append("\"versionName=|primaryCpuAbi=|categoryHint=|appCategory=\" | head -8; ")
+        scriptParts.append("echo \"#K\"; ")
+        scriptParts.append("pm path \"$p\" 2>/dev/null | sed 's/^package://' | ")
+        scriptParts.append("while read a; do stat -c %s \"$a\" 2>/dev/null; done; done")
+        let script = scriptParts.joined()
 
         guard let text = try? GuestBridge.shared.shell(script, timeout: 180) else {
             HuskLog.log("bridge", "could not read app details")
@@ -1179,7 +1181,7 @@ final class AndroidHost: ObservableObject {
         var current: String?
         var inSizes = false
         for raw in text.split(separator: "\n", omittingEmptySubsequences: false) {
-            let line = raw.trimmingCharacters(in: .whitespaces)
+            let line = raw.trimmingCharacters(in: CharacterSet.whitespaces)
             if line.hasPrefix("#P ") {
                 current = String(line.dropFirst(3))
                 inSizes = false
