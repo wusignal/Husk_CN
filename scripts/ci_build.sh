@@ -51,6 +51,13 @@ fi
 step "on-device pairing (Rust)"
 ./scripts/build_rppairing_ios.sh
 
+# PS4 layer stub: build_ps4_ios.sh is too heavy for CI, create a stub dylib
+if [ ! -f build/ios-arm64/lib/libhuskps4.dylib ]; then
+    step "PS4 layer stub"
+    mkdir -p build/ios-arm64/lib
+    echo "void husk_console_module_v1() {}" | clang -shared -arch arm64 -target arm64-apple-ios17.4 -o build/ios-arm64/lib/libhuskps4.dylib -x c -
+fi
+
 step "app + IPA"
 mkdir -p "$(dirname "$OUT")"
 ./scripts/package_ipa.sh "$OUT"
