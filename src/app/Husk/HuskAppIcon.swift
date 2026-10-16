@@ -25,18 +25,18 @@ enum HuskAppIcon: String, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .automatic:   return "Automatic"
-        case .clearLight:  return "Clear Light"
-        case .clearDark:   return "Clear Dark"
-        case .tintedLight: return "Tinted Light"
-        case .tintedDark:  return "Tinted Dark"
+        case .automatic:   return "自动"
+        case .clearLight:  return "浅色通透"
+        case .clearDark:   return "深色通透"
+        case .tintedLight: return "浅色着色"
+        case .tintedDark:  return "深色着色"
         }
     }
 
     var detail: String {
         self == .automatic
-            ? "Follows the system: light, dark and tinted."
-            : "Always this look."
+            ? "跟随系统：浅色、深色与着色。"
+            : "始终使用此外观。"
     }
 
     /// What UIKit wants: nil for the primary, the asset name otherwise.

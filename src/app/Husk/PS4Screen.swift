@@ -127,9 +127,9 @@ private struct PS4Surface: UIViewRepresentable {
     var statusText: String {
         if let error { return error }
         switch UInt32(state) {
-        case HUSK_CONSOLE_IDLE.rawValue, HUSK_CONSOLE_BOOTING.rawValue: return "Starting…"
-        case HUSK_CONSOLE_STOPPED.rawValue: return "The game has ended."
-        case HUSK_CONSOLE_FAILED.rawValue: return "The game could not start. Its log is in the game's Technical Details."
+        case HUSK_CONSOLE_IDLE.rawValue, HUSK_CONSOLE_BOOTING.rawValue: return "启动中…"
+        case HUSK_CONSOLE_STOPPED.rawValue: return "游戏已结束。"
+        case HUSK_CONSOLE_FAILED.rawValue: return "游戏无法启动，日志见游戏的技术详情。"
         default: return ""
         }
     }

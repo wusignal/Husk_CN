@@ -395,7 +395,7 @@ struct PS4GamePage: View {
             }
             Section("关于") {
                 LabeledContent("运行方式", value: "Husk 的 PS4 层")
-                LabeledContent("Title ID", value: game.titleID)
+                LabeledContent("标题 ID", value: game.titleID)
                 if let v = game.version { LabeledContent("版本", value: v) }
                 LabeledContent("上次游玩", value: game.lastPlayed.map { $0.formatted(date: .abbreviated, time: .shortened) } ?? "从未")
                 LabeledContent("文件夹", value: "PS4 Games/" + game.folder.lastPathComponent)

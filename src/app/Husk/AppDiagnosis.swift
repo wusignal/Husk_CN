@@ -101,7 +101,7 @@ struct AppDiagnosis: Identifiable, Equatable {
         // The app ended itself from native code: protection that found it is not on a certified phone, most of the time
         if let l = lines.last(where: { $0.contains("bionic: exit(") && $0.contains("called from") }),
            let code = l.range(of: "exit\\((\\d+)\\)", options: .regularExpression).map({ String(l[$0]) }), code != "exit(0)" {
-            let lib = l.components(separatedBy: "called from ").last?.split(separator: " ").first.map(String.init) ?? "its code"
+            let lib = l.components(separatedBy: "called from ").last?.split(separator: " ").first.map(String.init) ?? "其自身代码"
             return AppDiagnosis(kind: .closedItself, title: "应用拒绝在此运行",
                                 detail: "\(lib) 主动关闭了应用（\(code)）。带有防篡改或反作弊保护的应用在发现自己不在认证过的 Android 手机上时会这样做，Husk 无法对它们伪装成认证设备。",
                                 evidence: l)
@@ -139,7 +139,7 @@ struct AppDiagnosis: Identifiable, Equatable {
         // a proot userland): its own screens run, the programs can not, as an iOS app may not start processes
         if let l = lines.first(where: { $0.contains("the app started a process:") }),
            ["box64", "box86", "wine", "proot", "/usr/bin/", "imagefs", "rootfs", "termux", "ld-linux"].contains(where: { l.localizedCaseInsensitiveContains($0) }) {
-            let prog = l.components(separatedBy: "the app started a process: ").last?.components(separatedBy: " -- ").first ?? "a program"
+            let prog = l.components(separatedBy: "the app started a process: ").last?.components(separatedBy: " -- ").first ?? "一个程序"
             return AppDiagnosis(kind: .missingFeature, title: "以独立进程运行 Linux 程序",
                                 detail: "此应用的主要工作在它自行启动的 Linux 程序中完成（这里是 \(prog.prefix(120))）。"
                                     + "它自己的界面能在 Husk 中运行，但 iOS 不允许应用启动其他进程，因此那些程序及其运行的游戏或工具暂时无法启动。",
