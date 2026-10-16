@@ -28,7 +28,7 @@ jobs:
       - name: Install system dependencies
         run: |
           brew install meson ninja pkg-config xcodegen qemu
-          pip3 install pyyaml
+          pip3 install --break-system-packages pyyaml
 
       - name: Install Rust (aarch64-apple-ios)
         run: |
