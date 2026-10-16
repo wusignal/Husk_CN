@@ -421,7 +421,7 @@ final class PadView: UIView {
             case .button(let b, let label):
                 drawRound(c, label: label, down: shown.buttons & b.mask != 0)
             case .bumper(let b, let label):
-                drawKey(c, label: VirtualPad.name(label), down: shown.buttons & b.mask != 0)
+                drawKey(c, label: PadLayout.name(label), down: shown.buttons & b.mask != 0)
             case .trigger(let left, let label):
                 drawKey(c, label: label, down: (left ? shown.lt : shown.rt) > 0)
             }
