@@ -68,8 +68,8 @@ angle_build () {
         WK_AVAILABILITY_OVERLAY_FLAGS="" WK_AVAILABILITY_OVERLAY_SWIFT_FLAGS="" \
         IPHONEOS_DEPLOYMENT_TARGET="15.5" \
         GCC_TREAT_WARNINGS_AS_ERRORS=NO \
-        OTHER_CFLAGS='$(inherited) -Wno-unguarded-availability-new -w' \
-        OTHER_CPLUSPLUSFLAGS='$(inherited) -Wno-unguarded-availability-new -w' \
+        OTHER_CFLAGS='$(inherited) -Wno-unguarded-availability-new -w -DANGLE_ENABLE_SHARE_CONTEXT_LOCK=1' \
+        OTHER_CPLUSPLUSFLAGS='$(inherited) -Wno-unguarded-availability-new -w -DANGLE_ENABLE_SHARE_CONTEXT_LOCK=1' \
         ${ldflags[@]+"${ldflags[@]}"} \
         > "$LOG" 2>&1 \
       || { echo "ANGLE build failed; last errors:" >&2
