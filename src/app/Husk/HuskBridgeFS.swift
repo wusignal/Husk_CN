@@ -1164,16 +1164,16 @@ final class AndroidHost: ObservableObject {
 
         // One `+` chain of six pieces is more than the type checker will take in
         // reasonable time; joining a list of pieces is the same string and one
-        // expression less to prove. `$p` and `$a` are the guest shell's, so the
-        // pieces holding them are raw strings.
+        // expression less to prove. These are ordinary strings, not raw ones:
+        // `"#` inside `echo "#P $p"` would close a `#"..."#` literal early.
         let list = safe.joined(separator: " ")
         let script = [
             "for p in \(list); do",
-            #"echo "#P $p";"#,
-            #"dumpsys package "$p" 2>/dev/null | grep -E "versionName=|primaryCpuAbi=|categoryHint=|appCategory=" | head -8;"#,
-            #"echo "#K";"#,
-            #"pm path "$p" 2>/dev/null | sed 's/^package://' |"#,
-            #"while read a; do stat -c %s "$a" 2>/dev/null; done;"#,
+            "echo \"#P $p\";",
+            "dumpsys package \"$p\" 2>/dev/null | grep -E \"versionName=|primaryCpuAbi=|categoryHint=|appCategory=\" | head -8;",
+            "echo \"#K\";",
+            "pm path \"$p\" 2>/dev/null | sed 's/^package://' |",
+            "while read a; do stat -c %s \"$a\" 2>/dev/null; done;",
             "done",
         ].joined(separator: " ")
 
