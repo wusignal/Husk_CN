@@ -29,6 +29,22 @@ private enum HuskJITWork {
                              txmPresent: StikJIT.isTXMPresent)
             }
 
+            // Storing an image the app fetched or imported needs no device
+            // connection: it only writes the files where `prepare` looks for
+            // them, so it is handled before the pairing check, like the reset.
+            if request.operation == .installDDI {
+                guard let files = request.ddi, files.isComplete else {
+                    throw NSError(domain: "HuskJITHelper", code: 3,
+                                  userInfo: [NSLocalizedDescriptionKey:
+                                    "The Developer Disk Image was incomplete: Image.dmg, "
+                                    + "Image.dmg.trustcache and BuildManifest.plist are all needed."])
+                }
+                try store(files, at: paths)
+                return .init(success: true,
+                             message: "Developer Disk Image installed. Tap Check setup to mount it.",
+                             txmPresent: StikJIT.isTXMPresent)
+            }
+
             guard let pairingData = request.pairingData, !pairingData.isEmpty else {
                 throw NSError(domain: "HuskJITHelper", code: 1,
                               userInfo: [NSLocalizedDescriptionKey: "The pairing file was not provided."])
@@ -74,16 +90,7 @@ private enum HuskJITWork {
             case .resetDDI:
                 preconditionFailure("Handled above")
             case .installDDI:
-                guard let files = request.ddi, files.isComplete else {
-                    throw NSError(domain: "HuskJITHelper", code: 3,
-                                  userInfo: [NSLocalizedDescriptionKey:
-                                    "The Developer Disk Image was incomplete: Image.dmg, "
-                                    + "Image.dmg.trustcache and BuildManifest.plist are all needed."])
-                }
-                try store(files, at: paths)
-                return .init(success: true,
-                             message: "Developer Disk Image installed. Tap Check setup to mount it.",
-                             txmPresent: StikJIT.isTXMPresent)
+                preconditionFailure("Handled above")
             }
         } catch {
             return .init(success: false, message: error.localizedDescription,
