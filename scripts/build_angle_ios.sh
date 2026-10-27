@@ -46,6 +46,17 @@ cd "$WK/Source/ThirdParty/ANGLE"
 # and Dopamine devices), and ANGLE is built to match.
 ALIASES="$GPU/angle-aliases.txt"
 
+# WebKit's ANGLE tree is a moving target: it is cloned from main, and clang keeps
+# gaining diagnostics. The current combination fails its own -Werror on
+#   src/common/SimpleMutex.h:108: 'acquire_capability' attribute requires
+#   arguments whose type is annotated with 'capability' attribute
+# -- a complaint about annotations inside ANGLE itself, in code Husk never
+# calls. Demoting just the thread-safety categories keeps every other warning
+# fatal, which clearing -Werror across the board would not.
+angle_warning_flags () {
+    printf '%s' '$(inherited) -Wno-unguarded-availability-new -Wno-error=thread-safety-attributes -Wno-error=thread-safety-analysis -Wno-error=thread-safety-verbose'
+}
+
 angle_build () {
     # The alias flag has to reach xcodebuild as ONE argument. Written inline as
     # an unquoted ${1:+...} it word-splits at the space, xcodebuild sees a bare
@@ -67,8 +78,8 @@ angle_build () {
         CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
         WK_AVAILABILITY_OVERLAY_FLAGS="" WK_AVAILABILITY_OVERLAY_SWIFT_FLAGS="" \
         IPHONEOS_DEPLOYMENT_TARGET="15.5" \
-        OTHER_CFLAGS='$(inherited) -Wno-unguarded-availability-new' \
-        OTHER_CPLUSPLUSFLAGS='$(inherited) -Wno-unguarded-availability-new' \
+        OTHER_CFLAGS="$(angle_warning_flags)" \
+        OTHER_CPLUSPLUSFLAGS="$(angle_warning_flags)" \
         ${ldflags[@]+"${ldflags[@]}"} \
         > "$LOG" 2>&1 \
       || { echo "ANGLE build failed; last errors:" >&2
