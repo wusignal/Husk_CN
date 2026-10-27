@@ -1,0 +1,19 @@
+/* Husk — 简体中文（zh-Hans）。由 tools/build_strings.py 生成。 */
+
+"Developer Disk Image cache reset." = "开发者映像缓存已重置。";
+
+"Developer Disk Image installed. Tap Check setup to mount it." = "开发者映像已安装。点按“检查配置”即可挂载。";
+
+"Husk detached cleanly from its built-in JIT helper." = "Husk 已从内置 JIT 助手正常分离。";
+
+"Husk's JIT helper received no request." = "Husk 的 JIT 助手没有收到请求。";
+
+"LocalDevVPN is reachable and the Developer Disk Image is ready." = "LocalDevVPN 可以访问，开发者映像已就绪。";
+
+"StikJIT returned an unknown preparation state." = "StikJIT 返回了未知的准备状态。";
+
+"The Developer Disk Image was incomplete: Image.dmg, Image.dmg.trustcache and BuildManifest.plist are all needed." = "开发者映像不完整：Image.dmg、Image.dmg.trustcache 和 BuildManifest.plist 缺一不可。";
+
+"The pairing file was not provided." = "未提供配对文件。";
+
+"The target process or Husk's JIT script was not provided." = "未提供目标进程或 Husk 的 JIT 脚本。";

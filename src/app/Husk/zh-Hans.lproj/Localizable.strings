@@ -1,0 +1,1347 @@
+/* Husk — 简体中文（zh-Hans）。由 tools/build_strings.py 生成。 */
+
+" Built-in StikJIT needs iOS 26, LocalDevVPN, and a pairing file, which Husk can make itself on iOS 27." = " 内置 StikJIT 需要 iOS 26、LocalDevVPN 和配对文件，在 iOS 27 上 Husk 可以自行生成配对文件。";
+
+"%@ and more, running on your iPhone with Husk." = "%@ 等更多应用，用 Husk 在你的 iPhone 上运行。";
+
+"%@ apps" = "%@ 个应用";
+
+"%@ Downloading" = "%@ 个正在下载";
+
+"%@ fps" = "%@ fps";
+
+"%@ free on this device." = "本设备可用空间 %@。";
+
+"%@ has been started in this run of Husk. Close Husk and open it again to restore saves." = "%@ 已在本次运行中启动过。请完全关闭 Husk 后重新打开，再恢复存档。";
+
+"%@ is still loaded and only one game can run per session. Husk closes; open it again and %@ starts by itself." = "%@ 仍在运行，而一次会话只能运行一个游戏。Husk 会关闭；重新打开后 %@ 会自动启动。";
+
+"%@ is still loaded, and a game cannot be unloaded once it has started. Close Husk with the button above, then open it again to play %@." = "%@ 仍在运行，而游戏一旦启动就无法卸载。请用上方的按钮关闭 Husk，再重新打开以运行 %@。";
+
+"%@ of %@" = "%@ / %@";
+
+"%@ opens by itself once Android has started." = "安卓启动后，%@ 会自动打开。";
+
+"%@ Orientation and resolution apply the next time the game starts, and a game already running in this session needs Husk closed and opened again." = "%@ 屏幕方向与分辨率会在下次启动游戏时生效；本次会话中已在运行的游戏，需要先关闭 Husk 再重新打开。";
+
+"%@ was started in this session, and a game cannot be unloaded once it has started. Close Husk completely and open it again to run %@." = "%@ 已在本次运行中启动过，而游戏一旦启动就无法卸载。请完全关闭 Husk 后重新打开，以运行 %@。";
+
+"%@ was started in this session. Close Husk completely and open it again to run %@." = "%@ 已在本次运行中启动过。请完全关闭 Husk 后重新打开，再运行 %@。";
+
+"%@, minimised" = "%@（已最小化）";
+
+"A backup is a .zip of everything %@ has saved in Husk, to keep in Files or move to another device." = "备份是 %@ 在 Husk 中保存的全部内容的 .zip 文件，可保存在“文件”中或移到另一台设备。";
+
+"A console-style home: your games on a shelf, the one you pick fills the screen with its artwork, and Play is one tap away. Android and PS4 games side by side, a new library, in light or dark as Settings › Appearance says." = "主机风格的主页：游戏陈列在一排里，选中的那款会用封面铺满屏幕，点一下即可开始。安卓与 PS4 游戏并列在同一处，全新的游戏库，浅色或深色跟随“设置 › 外观”。";
+
+"A direct link to an APK, a bundle or a zip. It shows in Downloads, then Husk asks where it goes." = "APK、应用包或 zip 的直接链接。它会出现在“下载”中，之后 Husk 会询问放到哪里。";
+
+"A download failed" = "有下载失败";
+
+"A few quick choices first. Everything here can be changed later in Settings." = "先做几个简单的选择。这里的所有设置以后都可以在“设置”中更改。";
+
+"A Husk account keeps your profile, playtime and achievements, here and on antiweb.lol." = "Husk 账户会同步你的资料、游戏时长和成就，本机和 antiweb.lol 上都能看到。";
+
+"A jailbreak was found. Turn on Allow JIT in Apps." = "检测到越狱。请开启“允许应用使用 JIT”。";
+
+"A new Husk" = "焕然一新的 Husk";
+
+"A new look, PS4 games, and hundreds more Android games." = "全新界面、PS4 游戏，以及数百款新支持的安卓游戏。";
+
+"A pairing file made on a computer lets Husk talk to this %@ the same way." = "在电脑上生成的配对文件，能让 Husk 以同样的方式与这台 %@ 通信。";
+
+"About" = "关于";
+
+"About Husk" = "关于 Husk";
+
+"About this app" = "关于此应用";
+
+"Accent Colour" = "强调色";
+
+"Achievements" = "成就";
+
+"Active Repositories" = "已启用的软件源";
+
+"Add" = "添加";
+
+"Add a Game or App" = "添加游戏或应用";
+
+"Add a game or app" = "添加游戏或应用";
+
+"Add a game with the + button." = "用 + 按钮添加游戏。";
+
+"Add a link to an APK or a file, or the address a computer gives you when it shares a folder." = "添加 APK 或文件的链接，或电脑共享文件夹时给出的地址。";
+
+"Add a PS4 game with the + button, as a fake package (.pkg), a folder of them, or an extracted game folder, and play it from your library. Updates install beside their game, shaders are kept between launches, and games that ask for a name bring up the keyboard." = "用 + 按钮添加 PS4 游戏——可以是伪装包（.pkg）、包含多个包的文件夹，或已解包的游戏目录，然后从游戏库中启动。更新会安装到对应游戏旁边，着色器在多次启动之间保留，需要输入名称的游戏会自动调出键盘。";
+
+"Add Download" = "添加下载";
+
+"Add Geometry Dash First" = "请先添加 Geometry Dash";
+
+"Add Source" = "添加软件源";
+
+"Add to Husk" = "添加到 Husk";
+
+"Add your first game" = "添加你的第一个游戏";
+
+"Adding Games" = "添加游戏";
+
+"Adds a sound device. While it is attached Android cannot be saved — QEMU refuses to snapshot a machine with one — so every launch boots from cold. Turning it on or off costs a cold boot either way." = "添加一个声音设备。附加期间安卓无法保存——QEMU 拒绝为带声音设备的虚拟机创建快照——因此每次启动都会冷启动。无论开启还是关闭，都需要一次冷启动。";
+
+"Adds about 2 GB to the first download. It was captured on the software renderer, so it is not used on GPU — which cold-boots once and then saves its own." = "会让首次下载增加约 2 GB。它是在软件渲染器上截取的，因此在 GPU 模式下不会被使用——GPU 模式会冷启动一次，然后保存自己的快照。";
+
+"After playing, once per game per update" = "游玩之后，每个游戏每次更新一次";
+
+"An APK is added to your library when it finishes. Anything else goes into the Shared Storage folder, which games see as their phone storage." = "APK 下载完成后会加入你的游戏库。其他文件会放入“共享存储”文件夹，游戏会把它当作手机存储。";
+
+"ANDROID" = "安卓";
+
+"Android" = "安卓";
+
+"Android and PS4 games, on your iPhone." = "安卓和 PS4 游戏，就在你的 iPhone 上。";
+
+"Android and Translation Layer games need JIT. StikJIT, built into Husk, turns it on without a computer." = "安卓和转译层游戏需要 JIT。Husk 内置的 StikJIT 无需电脑即可开启。";
+
+"Android App Info" = "安卓应用信息";
+
+"Android draws on the real GPU through Metal — about four times the frame rate. This is the default." = "安卓通过 Metal 使用真实 GPU 绘制——帧率约为四倍。这是默认选项。";
+
+"Android Emulator" = "安卓模拟器";
+
+"Android installs it from where it already is — nothing is copied." = "安卓会直接从原位置安装，不会复制任何内容。";
+
+"Android needs memory it can write and then run, which on iOS only an attached debugger can grant. Choose how your %@ gets one." = "安卓需要既可写又可执行的内存，而在 iOS 上只有附加的调试器才能授予。请选择让你的 %@ 获得它的方式。";
+
+"Android no longer crashes after its download, the full Android emulator moved into Settings with a warning, closing Husk from the app switcher isn't reported as a crash, and much more." = "安卓在下载完成后不再崩溃；完整安卓模拟器移入“设置”并附有提示；从多任务界面关闭 Husk 不再被判定为崩溃，此外还有更多改进。";
+
+"Android reaches the internet through a virtual ethernet card on QEMU's own network. Nothing on your phone's network can see the guest, and the guest cannot see it." = "安卓通过 QEMU 自身网络上的虚拟网卡访问互联网。你手机所在网络上没有任何设备能看到这台客机，客机也看不到它们。";
+
+"Android runs fully emulated, so it is slower than games on the translation layer. Use it for apps Husk cannot run directly, like Termux or app stores." = "安卓完全以模拟方式运行，因此比转译层里的游戏慢。适合运行 Husk 无法直接运行的应用，例如 Termux 或应用商店。";
+
+"Android runtime" = "安卓运行时";
+
+"Android Sound" = "安卓声音";
+
+"Android update ready" = "安卓更新已就绪";
+
+"Android will boot from cold once, then save a new one." = "安卓会冷启动一次，然后保存新的快照。";
+
+"Android will get" = "安卓将使用";
+
+"Android's native code expects things of the processor and of memory that only the phone can answer -- above all, whether a library's code can run with its data writable right beside it. Enable JIT first, or the memory checks are skipped. The results go to the console too." = "安卓的本地代码会对处理器和内存提出一些只有手机才能回答的要求——最重要的是，一个库的代码能否在其数据可写的情况下紧邻运行。请先启用 JIT，否则内存检查会被跳过。结果也会输出到控制台。";
+
+"Anonymous" = "匿名";
+
+"Another game" = "另一个游戏";
+
+"Another game is already loaded" = "已有另一个游戏在运行";
+
+"Answers to common problems" = "常见问题的解答";
+
+"APKs install from the Library's + button or from the Files tab. Split sets — a base APK plus its config pieces — must be picked together; installing the base alone fails on missing native libraries." = "APK 可从游戏库的 + 按钮或“文件”标签页安装。拆分应用（一个基础 APK 加上若干配置包）必须一起选择；只安装基础 APK 会因缺少本地库而失败。";
+
+"App Icon" = "应用图标";
+
+"App Info" = "应用信息";
+
+"App reports" = "应用报告";
+
+"Appearance" = "外观";
+
+"Apps" = "应用";
+
+"Apps and games open in a window you can move, resize and minimise to a dock, like LiveContainer's multitasking. Each app can override this in its own settings." = "应用和游戏会在窗口中打开，可以移动、调整大小，也能最小化到屏幕边缘的 Dock，类似 LiveContainer 的多任务。每个应用都可以在自身设置中单独覆盖此项。";
+
+"Apps for\nevery day." = "每天都有\n新应用。";
+
+"Ask about Android updates" = "询问安卓更新";
+
+"Ask How Games Ran" = "询问游戏运行情况";
+
+"Attach my log" = "附带我的日志";
+
+"Attach the sound device" = "附加声音设备";
+
+"ATTEMPT LOG" = "尝试日志";
+
+"Automatic" = "自动";
+
+"Automatic follows the system appearance — light, dark and tinted. The others pin one look. iOS shows its own confirmation after a change; that alert cannot be turned off." = "“自动”会跟随系统外观——浅色、深色和着色。其他选项会固定一种外观。更改后 iOS 会显示自己的确认提示，该提示无法关闭。";
+
+"Automatic offers the controller for games that cannot be played without one (Unreal Engine games), when no real controller is connected. Always offers it for any game that understands one. A paired controller is always used." = "“自动”会在没有连接实体手柄时，为必须用手柄才能玩的游戏（虚幻引擎游戏）提供屏幕手柄；对任何支持手柄的游戏则始终提供。已配对的手柄始终优先使用。";
+
+"automatic saving off" = "自动保存已关闭";
+
+"automatic saving on" = "自动保存已开启";
+
+"Back" = "返回";
+
+"Back to Husk" = "返回 Husk";
+
+"Back Up Saves" = "备份存档";
+
+"Boots the guest as soon as Husk opens, when JIT is available." = "有 JIT 时，Husk 一打开就启动客机系统。";
+
+"Both sides must be between 240 and 2560." = "宽和高都必须在 240 到 2560 之间。";
+
+"Broken" = "不可用";
+
+"Browse and download apps using an anonymous Aurora guest account, or sign in with your Google account." = "使用匿名 Aurora 访客账户浏览和下载应用，或用你的 Google 账户登录。";
+
+"Browse Files" = "浏览文件";
+
+"Build %@" = "版本号 %@";
+
+"Built-in JIT is available only on a physical device." = "内置 JIT 仅在真机上可用。";
+
+"Built-in JIT is unavailable inside LiveContainer. Use StikDebug instead." = "在 LiveContainer 内无法使用内置 JIT。请改用 StikDebug。";
+
+"Built-in JIT is unavailable." = "内置 JIT 不可用。";
+
+"Built-in pairing" = "内置配对";
+
+"Built-in StikJIT" = "内置 StikJIT";
+
+"Built-in StikJIT needs iOS 26 or later. Use StikDebug instead." = "内置 StikJIT 需要 iOS 26 或更高版本。请改用 StikDebug。";
+
+"Built-in StikJIT needs LocalDevVPN and a pairing file, which Husk can make itself on iOS 27." = "内置 StikJIT 需要 LocalDevVPN 和配对文件，在 iOS 27 上 Husk 可以自行生成配对文件。";
+
+"Can't Play Here" = "无法在此游玩";
+
+"Cancel" = "取消";
+
+"Cancel Download" = "取消下载";
+
+"Cancel pairing" = "取消配对";
+
+"Check setup" = "检查配置";
+
+"Checking LocalDevVPN and the Developer Disk Image…" = "正在检查 LocalDevVPN 与开发者映像…";
+
+"Chinese, Japanese and Korean" = "中文、日文与韩文";
+
+"Chinese, Japanese and Korean text" = "中文、日文、韩文显示";
+
+"Choose another file" = "选择其他文件";
+
+"Choose pairing file" = "选择配对文件";
+
+"CJK font download failed: %@" = "CJK 字体下载失败：%@";
+
+"CJK fonts installed at %@" = "CJK 字体已安装到 %@";
+
+"Clear Finished" = "清除已完成";
+
+"Close" = "关闭";
+
+"Close Husk" = "关闭 Husk";
+
+"Close Husk completely and open it again. The setting applies to apps as they start." = "完全关闭 Husk 后重新打开。该设置会在应用启动时生效。";
+
+"Close Husk to Play" = "关闭 Husk 后开始游戏";
+
+"Close Husk?" = "关闭 Husk？";
+
+"Come back to Husk." = "然后回到 Husk。";
+
+"Compatibility" = "兼容性";
+
+"Compatibility List" = "兼容性列表";
+
+"Complete Store downloads" = "商店下载更完整";
+
+"Connect LocalDevVPN" = "连接 LocalDevVPN";
+
+"Connecting to Google Play…" = "正在连接 Google Play…";
+
+"Console" = "控制台";
+
+"Continue" = "继续";
+
+"Continue with the current pairing" = "使用当前配对继续";
+
+"Controller" = "手柄";
+
+"Controls" = "操控";
+
+"Copy" = "复制";
+
+"Copy Package Name" = "复制包名";
+
+"Could Not Load" = "无法加载";
+
+"CPU" = "CPU";
+
+"CPU renderer selected" = "已选择 CPU 渲染";
+
+"Crash Report" = "崩溃报告";
+
+"Create a Husk Account" = "创建 Husk 账户";
+
+"ctrl" = "ctrl";
+
+"Custom" = "自定义";
+
+"Custom Colour" = "自定义颜色";
+
+"Custom resolution" = "自定义分辨率";
+
+"Data" = "数据";
+
+"Debugger" = "调试器";
+
+"Debugger after setup" = "配置完成后的调试器";
+
+"Delete" = "删除";
+
+"Delete saved machine" = "删除已保存的机器";
+
+"Details" = "详情";
+
+"Developer Disk Image" = "开发者映像";
+
+"Developer Disk Image cache reset." = "开发者映像缓存已重置。";
+
+"Developer Disk Image installed. Tap Check setup to mount it." = "开发者映像已安装。点按“检查配置”即可挂载。";
+
+"Developer Info" = "开发者信息";
+
+"Device Checks" = "设备检查";
+
+"Device checks" = "设备检查";
+
+"Display" = "显示";
+
+"Display Name" = "显示名称";
+
+"Done" = "完成";
+
+"Dopamine can give every app JIT with one setting." = "Dopamine 只需一项设置就能让所有应用获得 JIT。";
+
+"Download" = "下载";
+
+"Download (19.5 MB)" = "下载（19.5 MB）";
+
+"Download address" = "下载地址";
+
+"Download From a Link" = "从链接下载";
+
+"Download Geode" = "下载 Geode";
+
+"Download pre-booted snapshot" = "下载已预启动快照";
+
+"Download the fonts in Settings › Fonts, and games stop showing empty boxes." = "在“设置 › 字体”中下载字体后，游戏不再显示方框乱码。";
+
+"Downloading %@ (%lld of %lld)…" = "正在下载 %@（第 %lld 个，共 %lld 个）…";
+
+"Downloading · %@ of %@" = "正在下载 · %@ / %@";
+
+"Downloads" = "下载";
+
+"Drag a control to move it, or tap one to resize or hide it." = "拖动控件可移动，点按可调整大小或隐藏。";
+
+"Each app is played once JIT is on, watched for 15 seconds, and written down; then Husk closes. Open Husk again for the next one. At the end the results file is offered to share." = "开启 JIT 后逐个运行每个应用，观察 15 秒并记录结果，然后 Husk 关闭。重新打开 Husk 运行下一个。结束后会提供结果文件供分享。";
+
+"Each time Husk opens without JIT, it asks the built-in StikJIT to turn it on, so games are ready without a tap. Needs StikJIT set up once (paired) first." = "每次 Husk 在没有 JIT 时打开，都会请内置 StikJIT 开启，无需点按即可开始游戏。需要先完成一次 StikJIT 设置（配对）。";
+
+"Each time Husk opens without JIT, it asks TrollStore to turn it on. TrollStore's URL Scheme setting must be on." = "每次 Husk 在没有 JIT 的情况下打开时，都会请 TrollStore 开启 JIT。需要打开 TrollStore 的 URL Scheme 设置。";
+
+"Edit" = "编辑";
+
+"Edit Profile" = "编辑资料";
+
+"Enable JIT" = "启用 JIT";
+
+"Enable JIT through the StikDebug app." = "通过 StikDebug 应用启用 JIT。";
+
+"Enable JIT with %@" = "用 %@ 启用 JIT";
+
+"Enable JIT with TrollStore" = "用 TrollStore 启用 JIT";
+
+"Enter the code Husk shows. It also appears in a banner and a notification, so you don't have to switch back." = "输入 Husk 显示的验证码。它也会以横幅和通知的形式出现，你不必切回来查看。";
+
+"Enter this code on your %@" = "在你的 %@ 上输入此代码";
+
+"Every pixel is drawn by the emulated CPU. Much slower, and only worth choosing if the GPU misbehaves." = "每个像素都由模拟的 CPU 绘制。速度慢得多，只有在 GPU 出现异常时才值得选择。";
+
+"Everything installed or saved inside Android is deleted. Translation layer apps keep their data." = "安卓内安装或保存的所有内容都会被删除。转译层应用会保留它们的数据。";
+
+"Everything is up to date" = "全部为最新";
+
+"Executable memory" = "可执行内存";
+
+"Experimental: full Android in an emulator" = "实验性：模拟器中的完整安卓";
+
+"Featured Apps" = "精选应用";
+
+"Fetching Repositories…" = "正在获取软件源…";
+
+"file imported" = "已导入文件";
+
+"Files" = "文件";
+
+"Find apps in F-Droid and other repositories" = "在 F-Droid 及其他软件源中查找应用";
+
+"First time? See the setup, or use StikDebug or TrollStore instead" = "第一次？查看设置，或改用 StikDebug 或 TrollStore";
+
+"Fixes" = "问题修复";
+
+"For a Husk installed through TrollStore." = "适用于通过 TrollStore 安装的 Husk。";
+
+"For apps that ask for your country." = "供需要获取国家/地区的应用使用。";
+
+"For apps that show local times." = "供需要显示本地时间的应用使用。";
+
+"Frame rate" = "帧率";
+
+"From the Store" = "来自商店";
+
+"Full Android emulation is experimental. It is slow, takes minutes to start, and can freeze or crash Husk. Games and apps run much better in the Translation Layer." = "完整安卓模拟仍是实验性功能：速度较慢、启动需要数分钟，还可能让 Husk 卡死或崩溃。游戏和应用在转译层里运行效果要好得多。";
+
+"Full Android runs in an emulator, for the apps the Translation Layer can't run yet. It is experimental: slow, and it can freeze or crash." = "完整安卓通过模拟器运行，用于转译层暂时还无法运行的应用。它仍是实验性的：速度慢，而且可能卡死或崩溃。";
+
+"Full HD — 1080 × 1920" = "全高清 — 1080 × 1920";
+
+"Game pages and the Store show how each app runs for everyone, from antiweb.lol. Your reports go there with your device, iOS version, Husk build and JIT method." = "游戏页面和商店会展示每个应用在所有人设备上的运行情况，数据来自 antiweb.lol。你的报告会连同设备、iOS 版本、Husk 版本和 JIT 方式一起上传。";
+
+"Game Settings" = "游戏设置";
+
+"Games and Android can run." = "游戏和安卓可以运行。";
+
+"Games need it. %@ turns it on." = "游戏需要它，由 %@ 来开启。";
+
+"Games need it. Tap to turn it on." = "游戏需要它，点按即可开启。";
+
+"Games that keep their data in expansion files get them with the download, and games split into many pieces load." = "把数据放在扩展文件里的游戏，会在下载时一并取得；拆分成多个分片的游戏也能正常加载。";
+
+"General" = "通用";
+
+"Generate App Clip" = "生成 App Clip";
+
+"Geode Is On for Geometry Dash" = "Geometry Dash 的 Geode 已开启";
+
+"Geode is the mod loader for Geometry Dash. With it on, Husk downloads Geode for this version of the game, and mods are found and installed in the game itself, from Geode's button on the main menu. Applies the next time the game starts." = "Geode 是 Geometry Dash 的模组加载器。开启后，Husk 会下载对应游戏版本的 Geode，模组则在游戏内部通过主菜单上的 Geode 按钮查找并安装。下次启动游戏时生效。";
+
+"GET" = "获取";
+
+"Get" = "获取";
+
+"Get Android First" = "请先获取安卓";
+
+"Get LocalDevVPN" = "获取 LocalDevVPN";
+
+"GitHub's own address is slow or unreachable on some networks. Paste a mirror's address here, or clear it to use GitHub again." = "在某些网络下，GitHub 的地址会很慢甚至无法访问。可以在这里填入镜像地址，或清空以重新使用 GitHub。";
+
+"Google Play Store" = "Google Play 商店";
+
+"GPU" = "GPU";
+
+"GPU machine" = "GPU 机器";
+
+"GPU renderer selected" = "已选择 GPU 渲染";
+
+"Guest Account (Aurora)" = "访客账户（Aurora）";
+
+"Guest image" = "客机镜像";
+
+"guest panel will be landscape" = "客机屏幕将为横屏";
+
+"guest panel will be portrait" = "客机屏幕将为竖屏";
+
+"Guest screen" = "客机屏幕";
+
+"Handing the image to Husk's JIT helper…" = "正在把映像交给 Husk 的 JIT 助手…";
+
+"Height" = "高度";
+
+"Help" = "帮助";
+
+"Hide" = "隐藏";
+
+"Hide the download address" = "隐藏下载地址";
+
+"Hide the interface" = "隐藏界面";
+
+"Holiday Decorations" = "节日装饰";
+
+"Home" = "主页";
+
+"Home Screen" = "主屏幕";
+
+"How did %@ run?" = "%@ 运行得怎么样？";
+
+"How does %@ run?" = "%@ 运行得怎么样？";
+
+"How each 64-bit library maps onto the iPhone: its relocations, the instructions Husk rewrites, and anything the loader works around." = "每个 64 位库如何映射到 iPhone：它的重定位、Husk 改写的指令，以及加载器绕过的问题。";
+
+"How it connects" = "连接方式";
+
+"How it works" = "工作原理";
+
+"How to Allow JIT" = "如何允许 JIT";
+
+"Hundreds more Android games" = "数百款新支持的安卓游戏";
+
+"Hundreds of newly working games on the compatibility list, unofficial ports like Sonic Robo Blast 2, Ring Racers, NetHack and PokeWilds, Flutter games that showed a blank screen draw again, Godot 4 games run, and Python games get online." = "兼容性列表新增数百款可运行的游戏；《Sonic Robo Blast 2》《Ring Racers》《NetHack》《PokeWilds》等非官方移植版可以运行；此前只显示白屏的 Flutter 游戏恢复画面；Godot 4 游戏可以运行；Python 游戏可以联网。";
+
+"HUSK" = "HUSK";
+
+"Husk" = "Husk";
+
+"Husk %@" = "Husk %@";
+
+"Husk %@ Is Available" = "有可用的 Husk %@";
+
+"Husk %@ is out" = "Husk %@ 已发布";
+
+"Husk %@ · %@" = "Husk %@ · %@";
+
+"Husk Account" = "Husk 账户";
+
+"Husk couldn't reach this device. Connect LocalDevVPN, then try again." = "Husk 无法连接这台设备。请连接 LocalDevVPN 后重试。";
+
+"Husk detached cleanly from its built-in JIT helper." = "Husk 已从内置 JIT 助手正常分离。";
+
+"Husk fetches it once and mounts it whenever JIT is turned on. If that download hangs, get the files here instead: download them from this screen, or import them from Files." = "Husk 只会下载它一次，之后每次开启 JIT 都会直接挂载。如果下载卡住了，可以在这里自己取文件：在本次页面下载，或从“文件”导入。";
+
+"Husk needs memory it can write and then execute, which on iOS takes an attached debugger." = "Husk 需要既可写又可执行的内存，在 iOS 上这需要附加调试器。";
+
+"Husk needs memory it can write and then execute, which on iOS takes an attached debugger. There are two ways to get it: a debugger that services trap requests, or a MAP_JIT mapping, which the kernel allows any debugged process. Either one is enough — which is available depends on the device and the iOS version, so Husk tests both rather than assuming." = "Husk 需要既可写又可执行的内存，在 iOS 上这需要附加一个调试器。有两种途径：一种是为陷阱请求提供服务的调试器，另一种是 MAP_JIT 映射（内核允许任何被标记为调试的进程使用）。任一种都足够——具体哪种可用取决于设备和 iOS 版本，因此 Husk 会两种都实际测试，而不是直接假定。";
+
+"Husk now runs on iOS 15.5 and later (PS4 games need iOS 17.4)." = "Husk 现在支持 iOS 15.5 及更高版本（PS4 游戏需要 iOS 17.4）。";
+
+"Husk pretends to be a computer on your Wi-Fi, and your %@ pairs with it the way it would with a Mac." = "Husk 会在你的 Wi-Fi 网络中伪装成一台电脑，你的 %@ 会像与 Mac 配对那样与它配对。";
+
+"Husk restores a saved machine instead of booting it, which takes seconds rather than minutes. The picture freezes while it writes. With this off, nothing saves by itself — including after an install." = "Husk 会直接恢复已保存的机器而不是重新启动，只需几秒而不是几分钟。写入期间画面会冻结。关闭此项后不会自动保存任何内容——包括安装之后。";
+
+"Husk runs unmodified Android APKs in a real Android system on your iPhone. The console shows Husk's live log, the guest's serial output and QEMU's own output — the three files any problem here is diagnosed from." = "Husk 会在 iPhone 上的真实安卓系统中运行未经修改的 APK。控制台会显示 Husk 的实时日志、客机的串口输出和 QEMU 自身的输出——这三个文件是诊断此类问题的依据。";
+
+"Husk was marked as debugged when it opened, so JIT is on." = "Husk 启动时已被标记为调试状态，因此 JIT 已开启。";
+
+"Husk's Android runtime is about 760 MB. Android itself follows once it is installed." = "Husk 的安卓运行时约 760 MB。安装完成后会接着下载安卓系统本身。";
+
+"Husk's helper reaches this %@'s debugging service through a local VPN. Nothing leaves your %@." = "Husk 的助手进程通过本地 VPN 访问这台 %@ 的调试服务。没有任何数据离开你的 %@。";
+
+"Husk's JIT helper did not start. Reinstall Husk, and keep its app extensions if your sideloader asks." = "Husk 的 JIT 助手未能启动。请重新安装 Husk；如果你的侧载工具询问，请保留其应用扩展。";
+
+"Husk's JIT helper finished without an answer." = "Husk 的 JIT 助手结束时没有返回结果。";
+
+"Husk's JIT helper is missing from this installation. Reinstall Husk, and keep its app extensions if your sideloader asks, or use StikDebug." = "此安装中缺少 Husk 的 JIT 助手。请重新安装 Husk；如果你的侧载工具询问，请保留其应用扩展；也可以改用 StikDebug。";
+
+"Husk's JIT helper received no request." = "Husk 的 JIT 助手没有收到请求。";
+
+"Husk's JIT helper stopped unexpectedly. Try again." = "Husk 的 JIT 助手意外停止。请重试。";
+
+"Husk's JIT script is missing from this installation. Reinstall Husk." = "此安装中缺少 Husk 的 JIT 脚本。请重新安装 Husk。";
+
+"Husk's PS4 layer" = "Husk 的 PS4 层";
+
+"I already have an account" = "我已有账户";
+
+"Import" = "导入";
+
+"Import a new pairing file" = "导入新的配对文件";
+
+"Import a pairing file made on a computer." = "导入在电脑上生成的配对文件。";
+
+"Import APK" = "导入 APK";
+
+"Import Files" = "导入文件";
+
+"Import this %@'s pairing file into StikDebug." = "把这台 %@ 的配对文件导入 StikDebug。";
+
+"In a window, %@ runs over Husk: move it by its title bar, resize it from the corner, and minimise it to the dock at the edge of the screen while you use the rest of Husk." = "在窗口中，%@ 会浮在 Husk 之上：拖动标题栏移动，从边角调整大小，也可以最小化到屏幕边缘的停靠区，同时继续使用 Husk 的其他功能。";
+
+"In TrollStore's Settings, turn on URL Scheme. TrollStore ignores enable-jit requests without it." = "在 TrollStore 的设置中打开 URL Scheme。没有它，TrollStore 会忽略启用 JIT 的请求。";
+
+"Input" = "输入";
+
+"Install" = "安装";
+
+"Install %@?" = "安装 %@？";
+
+"Install [LocalDevVPN](%@) from the App Store." = "从 App Store 安装 [LocalDevVPN](%@)。";
+
+"Install [StikDebug](https://github.com/StikDebug/StikDebug/releases/latest)." = "安装 [StikDebug](https://github.com/StikDebug/StikDebug/releases/latest)。";
+
+"Install and connect [LocalDevVPN](%@)." = "安装并连接 [LocalDevVPN](%@)。";
+
+"Install Husk.ipa through TrollStore, on an iOS version TrollStore supports. It carries the entitlements TrollStore keeps, so the same file works there and in a sideloader." = "在 TrollStore 支持的 iOS 版本上，用 TrollStore 安装 Husk.ipa。它带有 TrollStore 会保留的权限，因此同一个文件在 TrollStore 和侧载工具中都能用。";
+
+"Installed" = "已安装";
+
+"Installed with TrollStore" = "已通过 TrollStore 安装";
+
+"Internet and saved sessions" = "网络与已保存的会话";
+
+"iOS 15" = "支持 iOS 15";
+
+"iOS did not provide the extension API Husk's JIT helper needs." = "iOS 没有提供 Husk 的 JIT 助手所需的扩展接口。";
+
+"It is uninstalled from Android, with its data." = "它和它的数据会从安卓中卸载。";
+
+"It opens as soon as Android answers." = "安卓响应后就会打开。";
+
+"It's connected" = "已连接";
+
+"Its data goes with it." = "它的数据会一起删除。";
+
+"Its data goes with it. Save Android afterwards or the change is lost on the next launch." = "它的数据也会一并删除。之后请保存安卓，否则改动会在下次启动时丢失。";
+
+"Its files and saved progress are deleted from Husk." = "它的文件和存档会从 Husk 中删除。";
+
+"Jailbreak" = "越狱";
+
+"Jailbreak (Dopamine)" = "越狱（Dopamine）";
+
+"JIT" = "JIT";
+
+"JIT & Sideload" = "JIT 与侧载";
+
+"JIT & sideload" = "JIT 与侧载";
+
+"JIT allowed for apps" = "已允许应用使用 JIT";
+
+"JIT is off" = "JIT 已关闭";
+
+"JIT is on" = "JIT 已开启";
+
+"JIT is on." = "JIT 已开启。";
+
+"JIT is on. Android can start." = "JIT 已开启，安卓可以启动了。";
+
+"JIT off" = "JIT 已关闭";
+
+"JIT on" = "JIT 已开启";
+
+"JIT on its own" = "独立开启 JIT";
+
+"JIT was already on when Husk opened." = "Husk 打开时 JIT 已处于开启状态。";
+
+"Keep debugger attached" = "保持调试器连接";
+
+"Keep the network across saves" = "保存时保留网络";
+
+"Keep the screen on" = "保持屏幕常亮";
+
+"Keyboard" = "键盘";
+
+"Landscape" = "横屏";
+
+"Landscape Android Screen" = "安卓横屏显示";
+
+"Landscape HD — 1280 × 720" = "横屏高清 — 1280 × 720";
+
+"Language" = "语言";
+
+"Large Icons" = "大图标";
+
+"Last lines" = "最后几行";
+
+"Last Played" = "上次游玩";
+
+"Last Result" = "上次结果";
+
+"Last Run" = "上次运行";
+
+"Last Used" = "上次使用";
+
+"Launch" = "启动";
+
+"Leave it connected whenever you turn JIT on." = "开启 JIT 时请保持连接。";
+
+"Library" = "库";
+
+"Library loader" = "库加载器";
+
+"Light or dark, accent colour, app icon" = "浅色或深色、强调色、应用图标";
+
+"Live Activities are off for Husk, so downloads don't show on the Lock Screen or in the Dynamic Island. Turn them on in Settings › Husk › Live Activities." = "Husk 的实时活动已关闭，因此下载不会显示在锁定屏幕或灵动岛上。请在“设置”›“Husk”›“实时活动”中打开。";
+
+"Loading Google Sign-In…" = "正在加载 Google 登录…";
+
+"LocalDevVPN is reachable and the Developer Disk Image is ready." = "LocalDevVPN 可以访问，开发者映像已就绪。";
+
+"Made by Husk" = "由 Husk 生成";
+
+"Make a folder named DeveloperTesting in Husk's folder (Files > On My iPhone > Husk) and put the APKs to test in it: an APK each, or a folder per app with its base and split APKs." = "在 Husk 的文件夹（文件 > 我的 iPhone > Husk）中新建名为 DeveloperTesting 的文件夹，并把要测试的 APK 放进去：每个应用一个 APK，或每个应用一个包含基础 APK 和拆分 APK 的文件夹。";
+
+"Manage Repositories" = "管理软件源";
+
+"MAP_JIT" = "MAP_JIT";
+
+"Mass Test" = "批量测试";
+
+"May not run" = "可能无法运行";
+
+"May not run on this iPhone" = "可能无法在这台 iPhone 上运行";
+
+"Metadata for %@ of your app%@ has been updated. Would you like to download the updates?" = "你的 %@ 个应用%@的元数据已更新。要下载这些更新吗？";
+
+"Metadata Updated" = "元数据已更新";
+
+"Method" = "方式";
+
+"Mods" = "模组";
+
+"More for %@" = "更多 %@";
+
+"Multitasking" = "多任务";
+
+"Name" = "名称";
+
+"Names and icons come from Android's own launcher, which keeps the version it draws. Re-fetching throws away Husk's copies and asks again." = "名称和图标来自安卓自带的启动器，它会缓存自己绘制的版本。重新获取会丢弃 Husk 的副本并重新向安卓查询。";
+
+"Native Libraries (%@)" = "本地库（%@）";
+
+"Needs iOS 17.4" = "需要 iOS 17.4";
+
+"Needs iOS 27 or later." = "需要 iOS 27 或更高版本。";
+
+"Needs JIT to start" = "需要 JIT 才能启动";
+
+"Needs the built-in StikJIT, which is available on iOS 26 and later." = "需要内置 StikJIT，仅 iOS 26 及更高版本可用。";
+
+"Network" = "网络";
+
+"Next" = "下一步";
+
+"No apps found for \"%@\"." = "没有找到“%@”相关的应用。";
+
+"No computer needed. Pairs from Settings in a minute." = "无需电脑，在“设置”里一分钟即可完成配对。";
+
+"No downloads" = "没有下载";
+
+"No featured apps available. Try searching above." = "暂无精选应用。请尝试在上方搜索。";
+
+"No featured apps right now. Search Google Play above." = "暂无精选应用。请在上方搜索 Google Play。";
+
+"No jailbreak was found on this %@." = "这台 %@ 上没有检测到越狱。";
+
+"No Results" = "无结果";
+
+"not answering" = "无响应";
+
+"not attached" = "未附加";
+
+"not claimed" = "未获取";
+
+"Not downloaded yet" = "尚未下载";
+
+"not found" = "未找到";
+
+"Not installed" = "未安装";
+
+"not needed" = "无需";
+
+"Not Now" = "以后再说";
+
+"Not now" = "以后再说";
+
+"Not on the list yet. Be the first to say how it runs." = "尚未收录。来做第一个报告运行情况的人吧。";
+
+"Not played yet" = "尚未游玩";
+
+"not set up" = "未设置";
+
+"not started" = "未启动";
+
+"not tested" = "未测试";
+
+"not used (TXM)" = "未使用（TXM）";
+
+"Not yet" = "还没有";
+
+"Notes" = "备注";
+
+"Nothing here is called “%@”." = "没有叫“%@”的内容。";
+
+"Nothing matches “%@”. Open Settings › About › Open Console to see what Husk is doing." = "没有匹配“%@”的内容。打开“设置”›“关于”›“打开控制台”查看 Husk 正在做什么。";
+
+"Noto Sans CJK, the font Android uses for these languages. Games and apps that draw their own text (Unity, Flutter, cocos2d-x) show empty boxes for these characters without it. Takes effect the next time an app opens." = "Noto Sans CJK 是安卓用于这些语言的字体。自行绘制文字的游戏和应用（Unity、Flutter、cocos2d-x）在没有它时会把这些字符显示成方框。下次打开应用时生效。";
+
+"Now" = "现在";
+
+"Off by default. Husk detaches StikDebug as soon as the JIT region is held, because a debugger that iOS has suspended stops the whole app the next time it is needed. Turn this on only to collect StikDebug's own logs." = "默认关闭。一旦 JIT 内存区域被占住，Husk 就会断开 StikDebug，因为被 iOS 挂起的调试器会在下次需要时卡住整个应用。仅在收集 StikDebug 自身日志时才需要打开。";
+
+"On a computer, make this %@'s pairing file with the [StikDebug pairing-file guide](https://github.com/StikDebug/StikDebug-Guide/blob/main/pairing_file.md)." = "在电脑上按 [StikDebug 配对文件指南](https://github.com/StikDebug/StikDebug-Guide/blob/main/pairing_file.md) 生成这台 %@ 的配对文件。";
+
+"On a device jailbroken with Dopamine, JIT is a setting: the jailbreak marks every app as debugged when it opens, and a debugged app may run code it wrote. Husk needs nothing else." = "在通过 Dopamine 越狱的设备上，JIT 只是一项设置：越狱会让每个应用在打开时被标记为已调试，而已调试的应用可以运行自己写入的代码。Husk 不需要其他条件。";
+
+"On a jailbroken device JIT is a setting. In Dopamine, turn on Allow JIT in Apps, then open Husk again." = "在越狱设备上，JIT 只是一项设置。请在 Dopamine 中打开“允许应用使用 JIT”，然后重新打开 Husk。";
+
+"On-screen controller" = "屏幕手柄";
+
+"Opacity" = "不透明度";
+
+"Open" = "打开";
+
+"Open **Settings › Privacy & Security › Developer Mode**, scroll down and tap **Pair with %@**." = "打开**设置 › 隐私与安全性 › 开发者模式**，向下滚动并点按**与 %@ 配对**。";
+
+"Open Apps in Windows" = "在窗口中打开应用";
+
+"Open Console" = "打开控制台";
+
+"Open Dopamine and go to its Settings." = "打开 Dopamine 并进入它的设置。";
+
+"Open In" = "打开方式";
+
+"Open in Files" = "在“文件”中打开";
+
+"Open on antiweb.lol" = "在 antiweb.lol 上查看";
+
+"Open Settings" = "打开“设置”";
+
+"Opening apps" = "应用启动";
+
+"Opens" = "可打开";
+
+"Opens, but Has Problems" = "可以打开，但有问题";
+
+"or" = "或";
+
+"Or get it from" = "或者从这里获取";
+
+"Orientation" = "屏幕方向";
+
+"Other Ways to Turn On JIT" = "开启 JIT 的其他方式";
+
+"Package" = "安装包";
+
+"Pair again" = "重新配对";
+
+"Pair on this %@" = "在这台 %@ 上配对";
+
+"Pair this device or import its pairing file first." = "请先配对这台设备，或导入它的配对文件。";
+
+"Paired on this %@." = "已在这台 %@ 上配对。";
+
+"paired on this device" = "已在本机配对";
+
+"Paired with %@" = "已与 %@ 配对";
+
+"Pairing code %@" = "配对码 %@";
+
+"Pairing file imported." = "配对文件已导入。";
+
+"Password" = "密码";
+
+"Paste any F-Droid-compatible repository index URL." = "粘贴任意兼容 F-Droid 的软件源索引 URL。";
+
+"Performance" = "性能";
+
+"Performance readout" = "性能读数";
+
+"Pick an APK or a bundle (.xapk, .apkm, .apks), or share one to Husk from Files or Safari. Games run straight on your iPhone. Other apps run inside Android. PS4 games are extracted folders put in Husk's PS4 Games folder." = "选择 APK 或应用包（.xapk、.apkm、.apks），或从“文件”或 Safari 分享给 Husk。游戏会直接在 iPhone 上运行，其他应用在安卓中运行。PS4 游戏是解压后的文件夹，放入 Husk 的 PS4 Games 文件夹即可。";
+
+"plain memory (debugged or jailbroken)" = "普通内存（已调试或已越狱）";
+
+"Play" = "游玩";
+
+"Play more. Anywhere." = "畅玩更多，随时随地。";
+
+"Player Reports" = "玩家报告";
+
+"Plays" = "可玩";
+
+"Portrait" = "竖屏";
+
+"Preset" = "预设";
+
+"Presets" = "预设";
+
+"Preview" = "预览";
+
+"Profile, playtime and achievements" = "资料、游戏时长和成就";
+
+"Protected" = "受保护";
+
+"PS4 games" = "PS4 游戏";
+
+"PS4 games need iOS 17.4 or later." = "PS4 游戏需要 iOS 17.4 或更高版本。";
+
+"Put an extracted game folder in Husk's PS4 Games folder in Files." = "把解压后的游戏文件夹放入“文件”中 Husk 的 PS4 Games 文件夹。";
+
+"Puts %@ on your Home Screen with its own icon. Tapping it opens Husk straight into the game. Husk downloads a profile: open Settings, tap Profile Downloaded, then Install." = "把 %@ 以独立图标放到主屏幕。点按它可直接打开 Husk 并进入游戏。Husk 会下载一个描述文件：打开“设置”，点按“已下载描述文件”，然后选择“安装”。";
+
+"python3 serve-folder.py <folder>" = "python3 serve-folder.py <folder>";
+
+"Quick Actions" = "快捷操作";
+
+"Re-fetch icons" = "重新获取图标";
+
+"Reading the files…" = "正在读取文件…";
+
+"Ready to play" = "可以游玩";
+
+"Ready to start" = "可以启动";
+
+"Recently Added" = "最近添加";
+
+"Recently Played" = "最近玩过";
+
+"Refresh" = "刷新";
+
+"Refresh from Android" = "从安卓重新读取";
+
+"Region" = "地区";
+
+"Remove" = "移除";
+
+"Remove %@?" = "移除 %@？";
+
+"Remove Android" = "移除安卓";
+
+"Remove Android?" = "移除安卓？";
+
+"Remove Game" = "移除游戏";
+
+"Remove Picture" = "移除头像";
+
+"Removes %@ from Android" = "会从安卓中移除 %@";
+
+"Renderer" = "渲染器";
+
+"Renderer, sound" = "渲染器、声音";
+
+"Replace" = "替换";
+
+"Replace %@'s saves?" = "替换 %@ 的存档？";
+
+"Report How It Ran" = "报告运行情况";
+
+"Report to the Compatibility List" = "报告到兼容性列表";
+
+"Repositories" = "软件源";
+
+"Reset" = "重置";
+
+"Reset All" = "全部重置";
+
+"Reset Developer Disk Image" = "重置开发者映像";
+
+"Reset Game Data" = "重置游戏数据";
+
+"Reset the data of %@?" = "重置 %@ 的数据？";
+
+"Resetting the Developer Disk Image cache…" = "正在重置开发者映像缓存…";
+
+"Resolution" = "分辨率";
+
+"Restore Saves" = "恢复存档";
+
+"Retest %@ Failures" = "重测 %@ 个失败项";
+
+"Retry" = "重试";
+
+"Run Again" = "再次运行";
+
+"Running now" = "正在运行";
+
+"Runs inside Android" = "在安卓中运行";
+
+"Runs With" = "运行方式";
+
+"Runtime" = "运行时";
+
+"Save" = "保存";
+
+"Save Android Automatically" = "自动保存安卓状态";
+
+"Save Android Now" = "立即保存安卓";
+
+"Save automatically" = "自动保存";
+
+"Save it to Files, or AirDrop it to this %@." = "将它保存到“文件”，或通过隔空投送发送到这台 %@。";
+
+"Saved Machine" = "已保存的机器";
+
+"Saved machine" = "已保存的机器";
+
+"Saves" = "存档";
+
+"Saves, settings and caches the game made here are deleted." = "游戏在这里创建的存档、设置和缓存会被删除。";
+
+"Saving closes apps but leaves Android's framework running, so the network still works after a restore." = "保存会关闭应用，但保留安卓框架继续运行，因此恢复后网络仍然可用。";
+
+"Saving keeps Android exactly as it is, so the next start skips booting." = "保存会让安卓保持原样，下次启动可跳过开机过程。";
+
+"Saving stops the framework too. Clears every GPU resource, which is steadier — but the network may not come back until a cold boot." = "保存会同时停止框架。这会释放所有 GPU 资源，更稳定——但网络可能要等到冷启动之后才恢复。";
+
+"Saving…" = "正在保存…";
+
+"Screen" = "屏幕";
+
+"Screen, touch, keyboard" = "屏幕、触控、键盘";
+
+"Screenshots" = "截图";
+
+"Search" = "搜索";
+
+"Search Results" = "搜索结果";
+
+"Search to see %@ more apps." = "搜索可再显示 %@ 个应用。";
+
+"Search your games…" = "搜索你的游戏…";
+
+"Searching…" = "搜索中…";
+
+"See All" = "查看全部";
+
+"Select File" = "选择文件";
+
+"Send" = "发送";
+
+"Sent with it: %@, iOS %@, Husk build %@, JIT from %@. It shows on antiweb.lol for everyone." = "同时发送：%@、iOS %@、Husk 版本 %@、JIT 来源 %@。它会在 antiweb.lol 上向所有人显示。";
+
+"serve-folder.py is in Husk's repository, under tools. The folder's contents land at the top of Shared Storage, so serve the folder that holds what a game expects there." = "serve-folder.py 位于 Husk 仓库的 tools 目录下。文件夹中的内容会放到“共享存储”的最顶层，所以请共享游戏期望在那里看到的文件夹。";
+
+"Set up JIT" = "设置 JIT";
+
+"Set Up StikJIT Now" = "立即配置 StikJIT";
+
+"Settings" = "设置";
+
+"Settings & JIT" = "设置与 JIT";
+
+"Share" = "分享";
+
+"Share Log" = "分享日志";
+
+"Share Profile" = "分享资料";
+
+"Share Report" = "分享报告";
+
+"Share Results" = "分享结果";
+
+"Show" = "显示";
+
+"Show in Android Settings" = "在安卓设置中查看";
+
+"Show Me Around" = "带我逛逛";
+
+"Sideloading" = "侧载";
+
+"Sign In" = "登录";
+
+"Sign In with Google" = "用 Google 登录";
+
+"Sign in with Google" = "用 Google 登录";
+
+"Sign Out" = "退出登录";
+
+"Signing in to Google…" = "正在登录 Google…";
+
+"Signing in…" = "正在登录…";
+
+"Skip" = "跳过";
+
+"Small Icons" = "小图标";
+
+"Snapshots and automatic saving" = "快照与自动保存";
+
+"Software machine" = "软件渲染机器";
+
+"Something went wrong" = "出了点问题";
+
+"Sound" = "声音";
+
+"sound off" = "声音已关闭";
+
+"sound on" = "声音已开启";
+
+"Source URL" = "软件源 URL";
+
+"Start" = "开始";
+
+"Start Android and Open" = "启动安卓并打开";
+
+"Start Android on launch" = "启动时开启安卓";
+
+"Start Android to uninstall or look inside the app." = "启动安卓以卸载或查看应用内容。";
+
+"Start Android When Husk Opens" = "打开 Husk 时启动安卓";
+
+"Start Android?" = "启动安卓？";
+
+"Start Mass Test" = "开始批量测试";
+
+"Start pairing" = "开始配对";
+
+"Starting %@…" = "正在启动 %@…";
+
+"Starting Android…" = "正在启动安卓…";
+
+"Starting Husk's JIT helper…" = "正在启动 Husk 的 JIT 助手…";
+
+"Starting the download…" = "开始下载…";
+
+"Starting · %@" = "正在启动 · %@";
+
+"Starting…" = "正在启动…";
+
+"StikDebug is a separate app that attaches to Husk. Husk sends it the JIT script itself, so nothing needs configuring for Husk inside StikDebug." = "StikDebug 是一个独立应用，会附加到 Husk。JIT 脚本由 Husk 自己发送给它，因此 StikDebug 中无需为 Husk 做任何配置。";
+
+"StikDebug is installed, so Husk will open it to turn JIT on." = "已安装 StikDebug，Husk 将打开它来开启 JIT。";
+
+"StikDebug is installed, so Husk will open it." = "已安装 StikDebug，Husk 将打开它。";
+
+"StikDebug is installed." = "已安装 StikDebug。";
+
+"StikDebug is not installed. Install it, or set up Built-in StikJIT." = "未安装 StikDebug。请安装它，或改用内置 StikJIT。";
+
+"StikDebug, TrollStore and a jailbreak were not found, so Husk will use its built-in helper." = "未检测到 StikDebug、TrollStore 或越狱，Husk 将使用内置助手。";
+
+"StikJIT is built in — the recommended way" = "StikJIT 已内置——推荐的开启方式";
+
+"StikJIT is built into Husk. You can turn JIT on right here — no computer and no other app. Games and Android both need it." = "StikJIT 已内置于 Husk，可以直接在这里开启 JIT——无需电脑，也无需其他应用。游戏和安卓都需要它。";
+
+"StikJIT returned an unknown preparation state." = "StikJIT 返回了未知的准备状态。";
+
+"Stop" = "停止";
+
+"Stop Download" = "停止下载";
+
+"Storage" = "存储";
+
+"Store" = "商店";
+
+"Storing the Developer Disk Image…" = "正在写入开发者映像…";
+
+"Supported formats" = "支持的格式";
+
+"System follows the phone: light by day, dark by night. The guest's own screen stays dark either way — it is a picture of another phone. Holiday decorations appear from December to early January." = "“跟随系统”会跟随手机：白天浅色、夜间深色。客机自身的屏幕始终是深色——那是另一台手机的图像。节日装饰会在 12 月至次年 1 月初出现。";
+
+"Tap **Check setup**. Husk checks LocalDevVPN and prepares the Developer Disk Image." = "点按**检查配置**。Husk 会检查 LocalDevVPN 并准备开发者映像。";
+
+"Tap **Choose pairing file** and pick it." = "点按**选择配对文件**并选中它。";
+
+"Tap **Connect LocalDevVPN**. It switches the VPN on and comes straight back to Husk." = "点按**连接 LocalDevVPN**。它会打开 VPN 并直接回到 Husk。";
+
+"Tap **Enable JIT**. Husk's helper attaches and Android can start." = "点按**启用 JIT**。Husk 的助手进程会附加，安卓即可启动。";
+
+"Tap with three fingers to show the interface" = "三指点按以显示界面";
+
+"Technical detail in the Android Translation Layer screens: library reports, device checks and run logs." = "安卓转译层各页面中的技术细节：库报告、设备检查和运行日志。";
+
+"Technical Details" = "技术详情";
+
+"Tested by the Husk team on an iPhone." = "由 Husk 团队在 iPhone 上测试。";
+
+"Text fields in Unity, Java, Flutter, cocos2d-x and SDL games bring up the keyboard." = "Unity、Java、Flutter、cocos2d-x 与 SDL 游戏中的文本框都会调出键盘。";
+
+"That is not a remote pairing file. Make one with the StikDebug pairing-file guide and try again." = "这不是可用的远程配对文件。请按 StikDebug 配对文件指南生成一个后重试。";
+
+"The Developer Disk Image was incomplete: Image.dmg, Image.dmg.trustcache and BuildManifest.plist are all needed." = "开发者映像不完整：Image.dmg、Image.dmg.trustcache 和 BuildManifest.plist 缺一不可。";
+
+"The download failed: %@" = "下载失败：%@";
+
+"The download stopped with HTTP %lld. Try again, or paste a mirror address." = "下载因 HTTP %lld 中断。请重试，或换一个镜像地址。";
+
+"The end of the log from the last time the game started. Share it when reporting a problem." = "游戏上次启动时日志的末尾。报告问题时请分享它。";
+
+"The first check downloads and mounts Apple's Developer Disk Image, which can take a minute." = "首次检查会下载并挂载 Apple 的开发者映像，可能需要一分钟。";
+
+"The first check downloads and mounts Apple's Developer Disk Image, which is where it can get stuck: on a slow or blocked connection it waits with nothing to show. Download it here instead, or import it from Files." = "首次检查会下载并挂载 Apple 的开发者映像，卡住往往就发生在这步：网络慢或被阻断时会一直等待却没有任何提示。可以改为在这里手动下载，或从“文件”中导入。";
+
+"The game and everything it saved here are deleted from Husk." = "游戏及其在这里保存的所有内容都会从 Husk 中删除。";
+
+"The game starts with nothing over it: no bar, no controller, no readout. Tap with three fingers at once to bring the bar back, and again to hide it. The Hide button in the bar does the same while playing." = "游戏启动时界面上没有任何遮挡：没有控制栏、没有手柄、没有读数。三指同时点按可唤回控制栏，再点一次即可隐藏。游玩时控制栏里的“隐藏”按钮作用相同。";
+
+"The game stopped" = "游戏已停止";
+
+"The helper did not attach within 90 seconds. Check that LocalDevVPN is connected, then try again." = "助手进程在 90 秒内未能附加。请确认 LocalDevVPN 已连接后重试。";
+
+"The language Husk and the apps and games in it use, from the next time Husk opens." = "Husk 及其中的应用与游戏使用的语言，Husk 下次启动时生效。";
+
+"The list is written to disk, so it is on screen before Android has finished starting." = "列表会写入磁盘，因此在安卓启动完成之前就能显示在屏幕上。";
+
+"The pairing file stays in Husk's Documents folder and is only sent to Husk's own helper." = "配对文件保存在 Husk 的文稿文件夹中，只会发送给 Husk 自己的助手进程。";
+
+"The pairing file was not provided." = "未提供配对文件。";
+
+"The panel is built when the machine starts, so a change costs one cold boot, and the next save replaces the machine saved at the old size — changing back costs another. Sizes are rounded to a multiple of eight. Bigger is slower: every pixel is drawn by an emulated phone. Android's density does not change with the panel, so a larger one shows more rather than bigger." = "显示面板在虚拟机启动时构建，因此修改需要一次冷启动，并且下次保存会替换掉按旧尺寸保存的虚拟机——改回来又要再一次。尺寸会取整到 8 的倍数。越大越慢：每个像素都由模拟出来的手机绘制。安卓的屏幕密度不随面板变化，所以更大的面板显示的内容更多，而不是把内容放大。";
+
+"The plan, in order, is docs/04-translation-layer.md in Husk's source." = "计划的先后顺序见 Husk 源码中的 docs/04-translation-layer.md。";
+
+"The report holds the full log of that run and which device and build it was on. Nothing is sent anywhere unless you share it." = "报告包含那次运行的完整日志，以及所用的设备和版本。除非你分享，否则不会发送到任何地方。";
+
+"The request for Husk's JIT helper could not be encoded." = "发给 Husk 的 JIT 助手的请求无法编码。";
+
+"The target process or Husk's JIT script was not provided." = "未提供目标进程或 Husk 的 JIT 脚本。";
+
+"Theme" = "主题";
+
+"They go to %@. Unmodified APKs install from here too." = "文件会存到 %@。未修改的 APK 也可以从这里安装。";
+
+"This APK has no 64-bit code Husk can run, so it will probably not start." = "这个 APK 没有 Husk 能运行的 64 位代码，因此很可能无法启动。";
+
+"This build of Husk does not include the PS4 layer." = "此版本的 Husk 未包含 PS4 层。";
+
+"This device closed the connection, which usually means it no longer accepts Husk's pairing. Pair again, and check that LocalDevVPN is connected." = "这台设备断开了连接，通常意味着它不再接受 Husk 的配对。请重新配对，并确认 LocalDevVPN 已连接。";
+
+"This device is jailbroken, so JIT comes from the jailbreak's Allow JIT in Apps setting." = "这台设备已越狱，JIT 来自越狱的“允许应用使用 JIT”设置。";
+
+"This installation can only wait about 30 seconds in the background, so go to Settings straight away." = "此安装只能在后台等待约 30 秒，请立刻前往“设置”。";
+
+"This iPhone" = "这台 iPhone";
+
+"This is Geode's Android launcher. On Husk, Geode runs inside Geometry Dash instead: turn it on here (or in Geometry Dash's settings, under Mods), then start Geometry Dash and use Geode's button on its main menu to get mods. This APK supplies a library Geode needs, so keep it." = "这是 Geode 的安卓启动器。在 Husk 上，Geode 改为在 Geometry Dash 内部运行：在这里打开它（或在 Geometry Dash 设置里的“模组”中打开），然后启动 Geometry Dash，用其主菜单上的 Geode 按钮安装模组。这个 APK 提供 Geode 所需的库，请保留。";
+
+"This was removed." = "已被移除。";
+
+"Those files are not a whole Developer Disk Image. Image.dmg, Image.dmg.trustcache and BuildManifest.plist are all needed." = "这些文件并不构成完整的开发者映像。Image.dmg、Image.dmg.trustcache 和 BuildManifest.plist 缺一不可。";
+
+"Time Zone" = "时区";
+
+"Tints buttons, switches and selected states throughout the app." = "为整个应用中的按钮、开关和选中状态着色。";
+
+"Title ID" = "标题 ID";
+
+"To send a whole folder from a computer on the same Wi‑Fi, run this on it and enter the address it shows:" = "要从同一 Wi‑Fi 下的电脑发送整个文件夹，请在电脑上运行以下命令，并输入它显示的地址：";
+
+"Touch always works. A gamepad and a pointer are not wired through to Android yet." = "触控始终可用。手柄和指针设备暂未接入安卓。";
+
+"Touch is always on. The keyboard and the rotate control are in the pill at the bottom of the guest's screen; a gamepad and a pointer are not wired through yet." = "触控始终开启。键盘和旋转控件位于客机屏幕底部的胶囊条中；手柄和指针设备暂未接入。";
+
+"Translation Layer" = "转译层";
+
+"Trap servicer" = "陷阱服务";
+
+"Trending Now" = "热门趋势";
+
+"TrollStore can enable JIT for apps it installed, with no pairing file, VPN or computer." = "TrollStore 能为它安装的应用启用 JIT，无需配对文件、VPN 或电脑。";
+
+"TrollStore can turn JIT on for Husk: it opens Husk and enables it, with no computer. In TrollStore's Settings, URL Scheme must be on." = "TrollStore 可以为 Husk 开启 JIT：它会打开 Husk 并启用，无需电脑。TrollStore 设置中的 URL Scheme 必须打开。";
+
+"TrollStore could not be opened. Install Husk through TrollStore, or choose another method." = "无法打开 TrollStore。请通过 TrollStore 安装 Husk，或改用其他方式。";
+
+"TrollStore did not enable JIT. In TrollStore's Settings turn on URL Scheme, and make sure Husk was installed through TrollStore (or is signed with get-task-allow)." = "TrollStore 未能启用 JIT。请在 TrollStore 的设置中打开 URL Scheme，并确认 Husk 是通过 TrollStore 安装的（或已使用 get-task-allow 签名）。";
+
+"TrollStore installs turn JIT on at launch, and Husk says on screen when something can't start without it." = "通过 TrollStore 安装的 Husk 会在启动时开启 JIT；缺少 JIT 无法启动时，Husk 会在屏幕上说明原因。";
+
+"TrollStore is installed, so Husk will ask it to enable JIT." = "已安装 TrollStore，Husk 会请它启用 JIT。";
+
+"TrollStore is installed." = "已安装 TrollStore。";
+
+"TrollStore was not found on this %@. It installs on iOS 14.0 to 17.0." = "在这台 %@ 上没有找到 TrollStore。它支持 iOS 14.0 至 17.0。";
+
+"Try Again" = "重试";
+
+"Try to Run" = "尝试运行";
+
+"Turn On" = "开启";
+
+"Turn on Allow JIT in Apps in Dopamine's settings, then open Husk again." = "请在 Dopamine 的设置中打开“允许应用使用 JIT”，然后重新打开 Husk。";
+
+"Turn on Allow JIT in Apps." = "打开“允许应用使用 JIT”。";
+
+"Turn On Geode for Geometry Dash" = "为 Geometry Dash 开启 Geode";
+
+"Turn On JIT" = "开启 JIT";
+
+"Turn on JIT" = "开启 JIT";
+
+"Turn On JIT at Launch" = "启动时开启 JIT";
+
+"Turn On JIT to Play" = "开启 JIT 后开始游戏";
+
+"Turn On JIT with StikDebug" = "用 StikDebug 开启 JIT";
+
+"Turn On JIT with StikJIT" = "用 StikJIT 开启 JIT";
+
+"Turn On JIT with TrollStore" = "用 TrollStore 开启 JIT";
+
+"Turn On JIT with TrollStore at Launch" = "启动时用 TrollStore 开启 JIT";
+
+"Turn on Wi-Fi, tap **Start pairing** below and allow Local Network access." = "打开 Wi-Fi，点按下方的**开始配对**，并允许访问本地网络。";
+
+"Turning on JIT…" = "正在开启 JIT…";
+
+"Turning on…" = "正在开启…";
+
+"Typing everywhere" = "处处可打字";
+
+"Uninstall" = "卸载";
+
+"Uninstall %@?" = "卸载 %@？";
+
+"Unrotate picture" = "恢复画面方向";
+
+"Updates" = "更新";
+
+"Use a jailbreak" = "使用越狱";
+
+"Use a pairing file" = "使用配对文件";
+
+"Use Guest Account" = "使用访客账户";
+
+"Use Guest Account (Aurora)" = "使用访客账户（Aurora）";
+
+"Use Husk while an app runs" = "应用运行时继续使用 Husk";
+
+"Use Husk while it starts" = "启动时继续使用 Husk";
+
+"Use StikDebug" = "使用 StikDebug";
+
+"Use the jailbreak" = "使用越狱";
+
+"Use TrollStore" = "使用 TrollStore";
+
+"Version %@" = "版本 %@";
+
+"Vibrate on a press" = "按下时振动";
+
+"View" = "查看";
+
+"View Release" = "查看发布页";
+
+"Waiting for the helper to attach…" = "正在等待助手进程附加…";
+
+"Waiting for TrollStore to enable JIT…" = "正在等待 TrollStore 启用 JIT…";
+
+"Waiting for your %@…" = "正在等待你的 %@…";
+
+"Welcome to Husk" = "欢迎使用 Husk";
+
+"What %@ has saved now is replaced by the backup. Back up first if you want to keep it." = "%@ 现在保存的内容会被备份替换。如果想保留，请先备份。";
+
+"What the game is called in Husk. The game itself is not changed." = "游戏在 Husk 中显示的名称。游戏本身不会被更改。";
+
+"What worked, what didn’t, how far you got" = "哪些能用、哪些不能用、你进行到了哪一步";
+
+"What's New in Husk %@" = "Husk %@ 的新变化";
+
+"When a new Android image or snapshot is published, Husk asks once whether to download it. Never asked before Android has been downloaded." = "发布新的安卓镜像或快照时，Husk 会询问一次是否下载。在安卓镜像下载完成之前不会询问。";
+
+"Whenever Android or a game starts, Husk asks TrollStore to enable JIT. TrollStore opens Husk, attaches to it for a moment and lets go, which leaves it allowed to run code it wrote." = "每次安卓或游戏启动时，Husk 会请 TrollStore 启用 JIT。TrollStore 会打开 Husk、短暂附加后断开，从而允许它运行自己写入的代码。";
+
+"Whenever Android starts, Husk opens StikDebug, which attaches and comes back." = "每次安卓启动时，Husk 会打开 StikDebug，由它附加后自动返回。";
+
+"Where it stands" = "目前状态";
+
+"Which saved machine?" = "选择已保存的机器";
+
+"Width" = "宽度";
+
+"With icons" = "含图标";
+
+"Working…" = "处理中…";
+
+"Works Great" = "运行良好";
+
+"You can skip this: Husk asks again when a game needs it, and it is in Settings › JIT & Sideload." = "可以跳过：游戏需要时 Husk 会再次询问，也可以在“设置”›“JIT 与侧载”中找到。";
+
+"You have %@. The new version's IPA is on its release page." = "你的版本是 %@。新版本的 IPA 在它的发布页上。";
+
+"Your apps and their icons" = "你的应用及其图标";
+
+"Your Games" = "你的游戏";
+
+"Your Husk log helps the developer see what went wrong. Only moderators can read it." = "你的 Husk 日志能帮助开发者找到问题。只有管理员可以查看。";
+
+"Your Name" = "你的名字";
+
+"Your profile, playtime and achievements, on this iPhone and on antiweb.lol." = "你的资料、游戏时长和成就，在这台 iPhone 和 antiweb.lol 上都能看到。";
+
+"“%@” could not be read." = "无法读取“%@”。";

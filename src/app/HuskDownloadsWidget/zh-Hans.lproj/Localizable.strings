@@ -1,0 +1,3 @@
+/* Husk — 简体中文（zh-Hans）。由 tools/build_strings.py 生成。 */
+
+"%@ of %@" = "%@ / %@";

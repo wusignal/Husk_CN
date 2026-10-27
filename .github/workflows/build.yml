@@ -1,0 +1,78 @@
+name: Build iOS IPA
+
+# Compiles Husk and packages the IPA on a GitHub-hosted macOS runner.
+#
+# An iOS app can only be built by Xcode, which only runs on macOS. This is the
+# recipe that has completed on this repository before: macos-15 with Xcode 26,
+# the full scripts/ci_build.sh, and the PS4 layer stubbed (see the note there).
+#
+# The IPA is attached to the run as the Husk-IPA artifact.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: build-ipa-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 360
+    env:
+      # Only the .ipa. The TrollStore .tipa is a second bundle from the same
+      # sources and this workflow does not ship it.
+      HUSK_NO_TIPA: "1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: List available Xcode versions
+        run: ls -d /Applications/Xcode_*.app 2>/dev/null || true
+
+      - name: Select Xcode
+        # The vendored StikJIT framework was built by Swift 6.4, and its
+        # .swiftinterface is only readable by a compiler that new, so pin the
+        # newest Xcode 26 image rather than whatever the runner defaults to.
+        run: |
+          set -euo pipefail
+          XC="$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)"
+          if [ -n "$XC" ]; then
+            sudo xcode-select -s "$XC"
+          else
+            echo "no Xcode 26 on this image; using the default" >&2
+          fi
+
+      - name: Show Xcode version
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks | grep -i iphoneos || true
+
+      - name: Accept license
+        run: sudo xcodebuild -license accept
+
+      - name: Install system dependencies
+        run: brew install meson ninja pkg-config xcodegen qemu
+
+      - name: Install Rust (aarch64-apple-ios)
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+          source "$HOME/.cargo/env"
+          rustup target add aarch64-apple-ios
+
+      - name: Build IPA
+        run: |
+          source "$HOME/.cargo/env"
+          chmod +x scripts/*.sh
+          ./scripts/ci_build.sh build/Husk.ipa
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Husk-IPA
+          path: build/Husk.ipa
+          if-no-files-found: error
+          retention-days: 30
