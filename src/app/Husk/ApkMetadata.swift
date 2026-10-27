@@ -312,7 +312,10 @@ private final class ResourceTable {
     func string(for id: UInt32) -> String? {
         let found = entries(for: id).filter { $0.dataType == 0x03 }
         guard !found.isEmpty else { return nil }
-        let best = found.first { $0.locale == 0 } ?? found[0]
+        // Split in two statements: `first { } ?? found[0]` leaves `best` optional
+        // to the type checker, and `best.data` then fails to resolve.
+        let preferred: Entry? = found.first(where: { $0.locale == 0 })
+        let best: Entry = preferred ?? found[0]
         return values.string(Int(best.data))
     }
 

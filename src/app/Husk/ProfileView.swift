@@ -19,8 +19,11 @@ struct ProfileView: View {
             .background(Console.page.ignoresSafeArea())
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("Done") { dismiss() } }
-                if account.signedIn {
-                    ToolbarItem(placement: .primaryAction) {
+                // The `if` lives inside the item rather than around it: a
+                // conditional ToolbarItem needs ToolbarContentBuilder.buildIf,
+                // which is iOS 16, and Husk deploys to 15.5.
+                ToolbarItem(placement: .primaryAction) {
+                    if account.signedIn {
                         Menu {
                             Button { editing = true } label: { Label("Edit Profile", systemImage: "pencil") }
                             if let u = account.user {
